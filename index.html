@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DJ Alex - Experiências sonoras exclusivas e memoráveis.">
+    <title>DJ Alex | Official</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Audio element para som de batimento cardíaco -->
+    <audio id="heartbeatAudio" src="audio/heartbeat.mp3" preload="auto"></audio>
+
+    <!-- Background animations (Mantido conforme solicitado) -->
+    <div class="background-container">
+        <div class="gradient-bg"></div>
+        <div class="grid-lines"></div>
+        <div class="scan-line"></div>
+        <div class="particles-container" id="particlesContainer"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/dj_alex_logo.png" alt="DJ Alex Logo" class="logo">
+            </div>
+            
+            <button class="mobile-menu-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#about" class="nav-link">SOBRE</a>
+                <a href="#gallery" class="nav-link">GALERIA</a>
+                <a href="#contact" class="nav-link">CONTATO</a>
+                <a href="https://wa.me/5534997315151" target="_blank" rel="noopener noreferrer" class="nav-cta">
+                    AGENDAR
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section: Minimalista (Apenas Logo e Nome) -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <div class="hero-logo-wrapper">
+                <img src="images/dj_alex_logo.png" alt="DJ Alex Logo" class="hero-logo">
+            </div>
+            <h1 class="hero-title neon-cyan">DJ ALEX</h1>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>SCROLL</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title reveal">O ARTISTA</h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="lead">
+                        Com mais de uma década de experiência, DJ Alex transcende a mixagem convencional, criando jornadas sonoras que conectam público e música em um nível visceral.
+                    </p>
+                    <p>
+                        Especializado em vertentes da música eletrônica de alta energia, sua técnica impecável e leitura de pista transformam cada apresentação em um evento único. Do underground ao mainstream, a batida é o que nos une.
+                    </p>
+                </div>
+                <div class="about-stats reveal">
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Anos de Estrada</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Eventos Realizados</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title reveal">GALERIA</h2>
+            
+            <div class="carousel-wrapper reveal">
+                <div class="carousel">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Slides via JS -->
+                    </div>
+                    
+                    <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-card reveal">
+                <h2 class="section-title">CONTATO</h2>
+                <p>Pronto para elevar a energia do seu evento?</p>
+                
+                <div class="contact-actions">
+                    <a href="https://wa.me/5534997315151" target="_blank" rel="noopener noreferrer" class="btn-main">
+                        FALAR NO WHATSAPP
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><circle cx="17.5" cy="6.5" r="1.5"></circle></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a6 6 0 0 0-6 6v3H7v4h3v8h4v-8h3l1-4h-4V8a2 2 0 0 1 2-2h1z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 DJ Alex. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
