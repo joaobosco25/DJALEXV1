@@ -4,11 +4,11 @@
 
 // ============ CONFIG & STATE ============
 const galleryImages = [
-    "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&h=800&fit=crop"
+    "images/logo.jpeg",
+    "images/foto 1.jpeg",
+    "images/foto 2.jpeg",
+    "images/foto 3.jpeg",
+    "images/elvis.jpeg"
 ];
 
 let currentSlide = 0;

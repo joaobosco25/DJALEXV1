@@ -125,6 +125,7 @@ h1, h2, h3 {
     height: 40px;
     filter: drop-shadow(0 0 8px var(--neon-cyan));
     transition: var(--transition);
+    border-radius: 15px;
 }
 
 .nav-menu {
@@ -218,6 +219,7 @@ h1, h2, h3 {
     height: 120px;
     filter: drop-shadow(0 0 20px var(--neon-cyan));
     animation: float 6s ease-in-out infinite;
+    border-radius: 40px;
 }
 
 @keyframes float {
