@@ -4,7 +4,7 @@
 
 // ============ CONFIG & STATE ============
 const galleryImages = [
-    "images/logo.jpeg",
+    "images/LOGO.png",
     "images/foto 1.jpeg",
     "images/foto 2.jpeg",
     "images/foto 3.jpeg",
