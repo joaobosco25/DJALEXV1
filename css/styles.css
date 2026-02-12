@@ -701,3 +701,36 @@ section {
         animation-duration: 30s;
     }
 }
+
+/* Botão AGENDE JÁ - apenas mobile */
+.mobile-cta {
+    display: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--neon-cyan);
+    color: var(--neon-cyan);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+.mobile-cta:hover {
+    background: var(--neon-cyan);
+    color: var(--dark-bg);
+}
+
+/* Mostrar apenas no mobile */
+@media (max-width: 768px) {
+    .mobile-cta {
+        display: inline-block;
+        border-radius: 20px;
+    }
+
+    /* Ajustar espaçamento do header */
+    .header-content {
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
