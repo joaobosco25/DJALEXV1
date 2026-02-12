@@ -201,3 +201,78 @@ function initHeartbeat() {
         el.addEventListener('mouseenter', playHeartbeat);
     });
 }
+
+// ============ TESTIMONIALS ============
+const testimonialsData = [
+    {
+        name: "Mariana Silva",
+        text: "O DJ Alex transformou nosso casamento em uma festa inesquecível! A pista não ficou vazia por um minuto.",
+        stars: 5
+    },
+    {
+        name: "Ricardo Oliveira",
+        text: "Profissionalismo impecável e uma sensibilidade incrível para ler a galera. O melhor DJ que já contratei.",
+        stars: 5
+    },
+    {
+        name: "Ana Paula",
+        text: "As mixagens são de outro nível! Ele conseguiu misturar todos os estilos que pedimos com perfeição.",
+        stars: 5
+    },
+    {
+        name: "Lucas Ferreira",
+        text: "Energia surreal! O som e a iluminação que ele trouxe criaram uma atmosfera mágica no meu evento corporativo.",
+        stars: 5
+    },
+    {
+        name: "Beatriz Santos",
+        text: "Simplesmente sensacional. Atencioso desde o planejamento até o último minuto da festa. Recomendo muito!",
+        stars: 5
+    },
+    {
+        name: "Gustavo Mendes",
+        text: "Tocou exatamente o que a gente queria e ainda surpreendeu com remixes exclusivos. Nota 10!",
+        stars: 5
+    },
+    {
+        name: "Carla Nunes",
+        text: "Contratamos para o aniversário de 15 anos da minha filha e foi um sucesso total. Os jovens amaram!",
+        stars: 5
+    },
+    {
+        name: "Felipe Costa",
+        text: "Técnica de mixagem absurda e um repertório muito atualizado. Com certeza chamaremos nos próximos eventos.",
+        stars: 5
+    }
+];
+
+function initTestimonials() {
+    const track = document.getElementById('testimonialsTrack');
+    if (!track) return;
+
+    // Criar os cards de depoimento (duplicamos para o efeito de loop infinito)
+    const allTestimonials = [...testimonialsData, ...testimonialsData];
+    
+    allTestimonials.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'testimonial-card';
+        
+        let starsHtml = '';
+        for(let i=0; i<item.stars; i++) {
+            starsHtml += '★';
+        }
+
+        card.innerHTML = `
+            <div class="testimonial-stars">${starsHtml}</div>
+            <p class="testimonial-text">"${item.text}"</p>
+            <span class="testimonial-author">${item.name}</span>
+        `;
+        
+        track.appendChild(card);
+    });
+}
+
+// Chamar a função de inicialização dos depoimentos
+document.addEventListener('DOMContentLoaded', () => {
+    initTestimonials();
+});
